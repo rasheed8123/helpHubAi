@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelpHub AI - Presentation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <header class="bg-blue-600 text-white p-6 shadow-md">
+    <h1 class="text-3xl font-bold">HelpHub AI</h1>
+    <p class="text-sm">Modern, AI-powered internal helpdesk portal</p>
+  </header>
+
+
+
+
+  <main class="p-6 max-w-5xl mx-auto">
+    <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">📊 System Flow Diagram</h2>
+        <div class="overflow-x-auto">
+          <div class="bg-white border border-gray-300 rounded-lg shadow-md p-6 inline-block">
+            <pre class="text-sm leading-relaxed whitespace-pre">
+    +-----------------+
+    |  Super Admin    |
+    |-----------------|
+    | - Manages users |
+    | - Assigns roles |
+    +--------+--------+
+           |
+           v
+    +------------------+
+    |    Employee      |
+    |------------------|
+    | - Creates tickets|
+    +--------+---------+
+           |
+           v
+    +------+------+
+    |      |      |      
+    v      v      v      
+    +----+ +----+ +----+
+    | IT | | HR | |Admin|
+    +----+ +----+ +----+ 
+    |Handles Tech|HR Issues|Ops|
+    |   Issues   |         |Tasks|
+    +------------+---------+-----+
+    
+    - Tickets assigned based on category
+    - AI assists in classification and routing
+    - Face Recognition for secure password reset
+            </pre>
+          </div>
+        </div>
+      </section>
+
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2">🌟 Key Features</h2>
+      <div class="space-y-4">
+        <div>
+          <h3 class="text-xl font-bold">1. AI-Powered Ticket Management</h3>
+          <ul class="list-disc list-inside ml-4">
+            <li><strong>Smart Ticket Classification</strong>: Automatically categorizes tickets using OpenAI's GPT models</li>
+            <li><strong>Time Traveler Preview</strong>: Predicts ticket resolution time and involved departments</li>
+            <li><strong>Response Suggestions</strong>: AI-generated response templates based on ticket context</li>
+            <li><strong>Voice Ticket Creation</strong>: Convert speech to structured tickets using Google's Gemini AI</li>
+            <li><strong>AI Summary Generator</strong>: Automatically generates concise summaries of tickets and their history</li>
+            <li><strong>Mood Analysis</strong>: Detects user sentiment and emotional tone in tickets</li>
+            <li><strong>Multi-Language Summaries</strong>:
+              <ul class="list-disc ml-6">
+                <li>Generate summaries in 20+ languages</li>
+                <li>Powered by Hugging Face's Helsinki-NLP models</li>
+                <li>Support for global and Indian regional languages</li>
+                <li>Real-time translation with high accuracy</li>
+                <li>Technical terminology support</li>
+              </ul>
+            </li>
+            <li><strong>Face Recognition Password Reset</strong>: Securely reset passwords using face recognition during ticket flow</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold">2. Dual AI Chat System</h3>
+          <ul class="list-disc list-inside ml-4">
+            <li><strong>Public Assistant</strong>:
+              <ul class="list-disc ml-6">
+                <li>Available on landing page for immediate support</li>
+                <li>Handles general queries and FAQs</li>
+                <li>Provides system information</li>
+                <li>Offers pre-login guidance</li>
+                <li>Basic troubleshooting support</li>
+              </ul>
+            </li>
+            <li><strong>Authenticated Assistant</strong>:
+              <ul class="list-disc ml-6">
+                <li>Personalized support with user context</li>
+                <li>Access to user's ticket history</li>
+                <li>Department-specific guidance</li>
+                <li>Real-time ticket updates</li>
+                <li>Enhanced response capabilities</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold">3. Role-Based Access Control</h3>
+          <ul class="list-disc list-inside ml-4">
+            <li>Employee Portal: Submit and track tickets</li>
+            <li>IT Support: Handle technical issues</li>
+            <li>HR Support: Manage personnel-related queries</li>
+            <li>Admin Dashboard: Oversee system operations</li>
+            <li>Super Admin: Full system control</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold">4. Advanced Features</h3>
+          <ul class="list-disc list-inside ml-4">
+            <li>Ticket Analytics: Comprehensive dashboard with insights</li>
+            <li>File Attachments: Support for multiple file types</li>
+            <li>Status Tracking: Detailed ticket history and updates</li>
+            <li>Email Notifications: Automated status updates</li>
+            <li>Smart Summaries: AI-generated executive summaries for quick overview</li>
+            <li>Emotional Intelligence: Mood tracking and sentiment analysis for better support</li>
+            <li>Face Verification System:
+              <ul class="list-disc ml-6">
+                <li>Secure password reset using face recognition</li>
+                <li>Face image capture during user creation</li>
+                <li>Advanced face detection and recognition</li>
+                <li>Multiple face detection with best face selection</li>
+                <li>Configurable verification thresholds</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2">🛠️ Technology Stack</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-xl font-bold">Frontend</h3>
+          <ul class="list-disc list-inside ml-4">
+            <li><strong>Framework</strong>: React with TypeScript</li>
+            <li><strong>UI Components</strong>: Shadcn UI</li>
+            <li><strong>State Management</strong>: React Query</li>
+            <li><strong>Routing</strong>: React Router</li>
+            <li><strong>Styling</strong>: Tailwind CSS</li>
+            <li><strong>Animations</strong>: Framer Motion</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Backend</h3>
+          <ul class="list-disc list-inside ml-4">
+            <li><strong>Runtime</strong>: Node.js with Express</li>
+            <li><strong>Database</strong>: MongoDB with Mongoose</li>
+            <li><strong>Authentication</strong>: JWT</li>
+            <li><strong>File Storage</strong>: Cloudinary</li>
+            <li><strong>Email Service</strong>: Resend</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">AI Integration</h3>
+          <ul class="list-disc list-inside ml-4">
+            <li><strong>OpenAI</strong>: GPT models for ticket classification and response generation</li>
+            <li><strong>Google Gemini</strong>: Voice processing and chat assistance</li>
+            <li><strong>Hugging Face</strong>: (Planned) Sentiment analysis and multilingual support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">🚀 Getting Started</h2>
+      <div class="mb-4">
+        <h3 class="text-xl font-bold">Prerequisites</h3>
+        <ul class="list-disc list-inside ml-4">
+          <li>Node.js (v18 or higher)</li>
+          <li>MongoDB</li>
+          <li>npm or yarn</li>
+          <li>API keys for:
+            <ul class="list-disc ml-6">
+              <li>OpenAI</li>
+              <li>Google Gemini</li>
+              <li>Cloudinary</li>
+              <li>Resend</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-200 text-center py-4 mt-10">
+    <p class="text-sm">&copy; 2025 HelpHub AI. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
+
