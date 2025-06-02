@@ -92,7 +92,7 @@ HelpHub AI is a modern, AI-powered internal helpdesk portal that streamlines tic
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/rasheed8123/helpdesk_AI.git
+git clone https://github.com/rasheed8123/helpHubAi.git
 cd helphub-ai
 ```
 
