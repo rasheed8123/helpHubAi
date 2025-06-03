@@ -1,5 +1,10 @@
 # HelpHub AI - Intelligent Helpdesk Portal
 
+# 🚀 Live
+
+**Live Site:** [https://misogihelpdeskai.netlify.app](https://misogihelpdeskai.netlify.app)
+
+
 HelpHub AI is a modern, AI-powered internal helpdesk portal that streamlines ticket management and support processes. Built with React, Node.js, and MongoDB, it leverages advanced AI capabilities to provide intelligent ticket routing, automated responses, and predictive analytics.
 
 ## 🌟 Key Features
