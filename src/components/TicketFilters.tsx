@@ -3,6 +3,9 @@ import { Filter } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useAuth } from '@/contexts/AuthContext';
+import { Button } from '@/components/ui/button';
+
+import { Link, useNavigate } from 'react-router-dom';
 
 interface TicketFiltersProps {
   searchQuery: string;
@@ -23,7 +26,7 @@ export function TicketFilters({
 }: TicketFiltersProps) {
   const { user } = useAuth();
   const isStaff = ['admin', 'super-admin', 'hr', 'it'].includes(user?.role || '');
-
+  const navigate = useNavigate();
   const getMoodIcon = (mood: string) => {
     switch (mood) {
       case 'angry':
@@ -42,6 +45,15 @@ export function TicketFilters({
   return (
     <div className="flex flex-col sm:flex-row gap-4 mb-6 bg-white/60 backdrop-blur-sm p-4 rounded-lg shadow-sm">
       {/* Search Input */}
+      {!isStaff && (<div className="flex-1">
+      {/* <p className="text-gray-500 mb-4">No tickets found for the selected filter</p> */}
+              <Button onClick={() => navigate('/create-ticket')}>
+                Create New Ticket
+              </Button>
+      </div>)}
+      
+
+
       <div className="flex-1">
         <Input
           type="text"

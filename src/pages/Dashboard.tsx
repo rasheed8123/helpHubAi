@@ -55,6 +55,8 @@ interface TicketResponse {
 
 const Dashboard = () => {
   const { user } = useAuth();
+  const isStaff = ['admin', 'super-admin', 'hr', 'it'].includes(user?.role || '');
+
   const { toast } = useToast();
   const [tickets, setTickets] = useState<Ticket[]>([]);
   const [stats, setStats] = useState<any>({});
