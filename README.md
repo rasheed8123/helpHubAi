@@ -10,7 +10,7 @@ HelpHub AI is a modern, AI-powered internal helpdesk portal that streamlines tic
 ## 🌟 Key Features
 
 ### 1. AI-Powered Ticket Management
-- **Smart Ticket Classification**: Automatically categorizes tickets using OpenAI's GPT models
+- **Smart Ticket Classification**: Automatically categorizes tickets using a Logistic Regression model trained on ticket data
 - **Time Traveler Preview**: Predicts ticket resolution time and involved departments
 - **Response Suggestions**: AI-generated response templates based on ticket context
 - **Voice Ticket Creation**: Convert speech to structured tickets using Google's Gemini AI
